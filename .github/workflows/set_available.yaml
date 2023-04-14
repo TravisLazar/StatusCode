@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       # Runs a single command using the runners shell
 #       - name: Check Environment and Update Status
@@ -51,6 +53,7 @@ jobs:
           git commit -m "Updating status to AVAILABLE"
           git fetch origin main
           git push origin HEAD:main
+        
           
 
         
