@@ -38,6 +38,11 @@ jobs:
       - name: Run a multi-line script
         run: |
           git remote set-url origin git@github.com:TravisLazar/StatusCode.git
+          
+          ls
+          cat status.txt
+          echo 3 > status.txt
+          
           git status
           git add --all
           git commit -m "Updating status to AVAILABLE"
