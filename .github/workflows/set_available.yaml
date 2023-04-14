@@ -49,7 +49,7 @@ jobs:
           
           ls
           cat status.txt
-          echo 3 > status.txt
+          echo 2 > status.txt
           cat status.txt
           
           git status
