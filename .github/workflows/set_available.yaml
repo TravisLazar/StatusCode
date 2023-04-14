@@ -39,7 +39,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Update Status and Push to Repo
         run: |
-          git remote set-url origin git@github.com:TravisLazar/StatusCode.git
+          
           git config --global user.name "Status Bot"
           git config --global user.email "Status Bot"
           
