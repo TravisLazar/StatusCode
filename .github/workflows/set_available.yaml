@@ -26,8 +26,9 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Check Environment and Update Status
         run: |
+          pwd
           cd $GITHUB_WORKSPACE
           ls
           echo 3 > status.txt
